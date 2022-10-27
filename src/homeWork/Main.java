@@ -21,6 +21,8 @@ Author author1 = new Author("Карл", "Маркс");
             System.out.println("Это разные книги!");
         }
 
+
+
          */
 
 
