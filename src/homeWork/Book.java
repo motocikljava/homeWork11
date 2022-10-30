@@ -2,6 +2,8 @@ package homeWork;
 
 import homeWork.Author;
 
+import java.util.Objects;
+
 public class Book {
     private String name;
     private int age;
@@ -24,12 +26,14 @@ public class Book {
     public void setAge (int age) {
         this.age = age;
     }
-/*
+
+    @Override
+    public int hashCode() {return Objects.hash(name, age);
+    }
     public boolean equals(Object obj) {
         Book other = (Book) obj;
         return name.equals(other.name) && age == other.age;
     }
 
- */
 }
 
