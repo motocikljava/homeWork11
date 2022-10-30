@@ -15,16 +15,16 @@ public class Book {
 
     }
     public String getName() {
-        return this.name;
+        return name;
     }
     public int getAge() {
-        return this.age;
+        return age;
     }
     public String toString() {
-        return this.name + " " + this.age + "";
+        return name + " " + age + "";
     }
     public void setAge (int age) {
-        this.age = age;
+        age = age;
     }
 
     @Override

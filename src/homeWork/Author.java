@@ -12,15 +12,15 @@ public class Author {
     }
 
     public String getAuthorName() {
-        return this.authorName;
+        return authorName;
     }
 
     public String getAuthorSurname() {
-        return this.authorSurname;
+        return authorSurname;
     }
 
     public String toString() {
-        return this.authorName + " " + this.authorSurname;
+        return authorName + " " + authorSurname;
     }
 
 
