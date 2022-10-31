@@ -2,6 +2,8 @@ package homeWork;
 
 import homeWork.Author;
 
+import java.util.Objects;
+
 public class Book {
     private String name;
     private int age;
@@ -13,23 +15,28 @@ public class Book {
 
     }
     public String getName() {
-        return this.name;
+        return name;
     }
     public int getAge() {
-        return this.age;
+        return age;
     }
     public String toString() {
-        return this.name + " " + this.age + "";
+        return name + " " + age + "";
     }
     public void setAge (int age) {
-        this.age = age;
+        age = age;
     }
-/*
+
+    @Override
+    public int hashCode() {return Objects.hash(name, age);
+    }
+    @Override
     public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
         Book other = (Book) obj;
         return name.equals(other.name) && age == other.age;
     }
 
- */
 }
 
